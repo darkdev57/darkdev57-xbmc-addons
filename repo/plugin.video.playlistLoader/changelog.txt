@@ -1,3 +1,5 @@
+1.0.10
+- Preload playlists - DarkDev57
 1.0.9
 - Bugfix.
 1.0.8

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.9" provider-name="Avigdor">
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.10" provider-name="Avigdor - DarkDev57">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -10,7 +10,7 @@
     <summary lang="en">Playlist Loader - downloaded for free from:
 http://www.hometheater.co.il</summary>
     <description lang="en">Playlist Loader - downloaded for free from:
-http://www.hometheater.co.il</description>
+http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</description>
     <platform>all</platform>
   </extension>
 </addon>
