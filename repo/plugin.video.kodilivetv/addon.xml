@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.2.7" provider-name="Vania Rupeni">
+<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.3.8" provider-name="Vania Rupeni">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -11,6 +11,9 @@
     <description lang="en">Kodi Live TV - downloaded for free from:
 http://kodilive.eu
 Plugin to watch IPTV free worldwide</description>
+
+Regional italian channels list by Infogw:
+http://informaticglobalworld.altervista.org/
     <platform>all</platform>
   </extension>
 </addon>
