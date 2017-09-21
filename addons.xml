@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.darkdev57-xbmc-addons" name="DarkDev57 Repo" version="1.0" provider-name="DarkDev57">
-	<extension point="xbmc.addon.repository" name="DarkDev57 Repo">
-		<info compressed="false">https://raw.githubusercontent.com/darkdev57/darkdev57-xbmc-addons/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/darkdev57/darkdev57-xbmc-addons/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/darkdev57/darkdev57-xbmc-addons/raw/master/repo</datadir>
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Repository of add ons</summary>
-		<description>collection of add ons found and should not be lost</description>
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="repository.wolf-team" name="Wolf-Team official Repo" version="2.0" provider-name="WolfTeam">
+	<extension point="xbmc.addon.repository" name="Wolf-Team official Repo">
+		<info compressed="false">https://raw.githubusercontent.com/EquipoWolf/wolfteam/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/EquipoWolf/wolfteam/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/EquipoWolf/wolfteam/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Wolf-Team official Repo</summary>
+		<description>Instala los Addons de Wolf, repositorio creado por KodiMexico https://kodimexico.wordpress.com</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -27,22 +53,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.11" provider-name="Avigdor - DarkDev57">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Playlist Loader - downloaded for free from:
-http://www.hometheater.co.il</summary>
-    <description lang="en">Playlist Loader - downloaded for free from:
-http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="repository.HalowTV" name="  [COLOR lime][B]HALOW [/COLOR][COLOR white]Repository[/B][/COLOR]" version="3.0.0" provider-name="HalowRepo">
 	<extension point="xbmc.addon.repository" name="  [COLOR lime][B]Halow[/COLOR][COLOR white]Repository[/B][/COLOR]">
         <info compressed="false">https://raw.githubusercontent.com/HalowTV/HalowTV/master/zips/addons.xml</info>
@@ -52,6 +62,19 @@ http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</descriptio
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
 		<description>Download and install addons from Halow Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.darkdev57-xbmc-addons" name="DarkDev57 Repo" version="1.0" provider-name="DarkDev57">
+	<extension point="xbmc.addon.repository" name="DarkDev57 Repo">
+		<info compressed="false">https://raw.githubusercontent.com/darkdev57/darkdev57-xbmc-addons/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/darkdev57/darkdev57-xbmc-addons/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/darkdev57/darkdev57-xbmc-addons/raw/master/repo</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repository of add ons</summary>
+		<description>collection of add ons found and should not be lost</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -76,6 +99,97 @@ http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</descriptio
     <description>Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.11" provider-name="Avigdor - DarkDev57">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il</summary>
+    <description lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.3.8" provider-name="Vania Rupeni">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi Live TV - downloaded for free from: http://kodilive.eu</summary>
+    <description lang="en">Kodi Live TV - downloaded for free from:
+http://kodilive.eu
+Plugin to watch IPTV free worldwide</description>
+
+Regional italian channels list by Infogw:
+http://informaticglobalworld.altervista.org/
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.freplay"
+       name="FReplay"
+       version="0.6.1"
+       provider-name="SPM, JUL1EN094">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.parsedom" version="0.9.1"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
+    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
+    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
+    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
+    </description>
+    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
+    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
+    </description>
+    <email>kodi.freplay@gmail.com</email>
+    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
+    <language>fr</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/spmjc/plugin.video.freplay</source>
+    <disclaimer></disclaimer>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.FranceTVPluzz"
+       name="FranceTV Pluzz"
+       version="1.1.1"
+       provider-name="JUL1EN094">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>FranceTV Pluzz</summary>
+    <summary lang="fr">FranceTV Pluzz</summary>
+    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
+    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
   </extension>
 </addon>
 
@@ -115,28 +229,6 @@ http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</descriptio
   </extension>
 </addon>
 
-<addon id="plugin.video.FranceTVPluzz"
-       name="FranceTV Pluzz"
-       version="1.1.1"
-       provider-name="JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>FranceTV Pluzz</summary>
-    <summary lang="fr">FranceTV Pluzz</summary>
-    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
-    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
-  </extension>
-</addon>
-
 <addon id="org.harddevelop.kodi.tv"
 	name="TV BOX"
 	version="0.0.6"
@@ -155,71 +247,5 @@ http://www.hometheater.co.il - Modified by DarkDev57 - Preload Lists</descriptio
 		<description lang="en">TV BOX channels client for browse and see online channels.</description>
 		<description lang="es">Cliente de canales TV BOX para navegar y ver canales online.</description>
 	</extension>
-</addon>
-
-<addon id="plugin.video.freplay"
-       name="FReplay"
-       version="0.6.1"
-       provider-name="SPM, JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    <import addon="script.module.parsedom" version="0.9.1"/>
-    <import addon="script.module.requests" version="1.1.0"/>
-    <import addon="script.module.simplejson"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
-    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
-    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
-    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
-    </description>
-    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
-    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
-    </description>
-    <email>kodi.freplay@gmail.com</email>
-    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
-    <language>fr</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <source>https://github.com/spmjc/plugin.video.freplay</source>
-    <disclaimer></disclaimer>
-    <website></website>
-  </extension>
-</addon>
-
-<addon id="repository.wolf-team" name="Wolf-Team official Repo" version="2.0" provider-name="WolfTeam">
-	<extension point="xbmc.addon.repository" name="Wolf-Team official Repo">
-		<info compressed="false">https://raw.githubusercontent.com/EquipoWolf/wolfteam/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/EquipoWolf/wolfteam/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/EquipoWolf/wolfteam/master</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Wolf-Team official Repo</summary>
-		<description>Instala los Addons de Wolf, repositorio creado por KodiMexico https://kodimexico.wordpress.com</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.3.8" provider-name="Vania Rupeni">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Kodi Live TV - downloaded for free from: http://kodilive.eu</summary>
-    <description lang="en">Kodi Live TV - downloaded for free from:
-http://kodilive.eu
-Plugin to watch IPTV free worldwide</description>
-
-Regional italian channels list by Infogw:
-http://informaticglobalworld.altervista.org/
-    <platform>all</platform>
-  </extension>
 </addon>
 </addons>
